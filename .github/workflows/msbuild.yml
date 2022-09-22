@@ -23,5 +23,9 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    
+    - name: SetPath
+      run: set PATH=%PATH%;C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Msbuild\Current\Bin\MSBuild.exe
+    
     - name: Build
-      run: "C:\Program Files\Microsoft Visual Studio\2022\Community\Msbuild\Current\Bin\MSBuild.exe" cpptest/cpptest.sln
+      run: MSbuild cpptest/cpptest.sln
