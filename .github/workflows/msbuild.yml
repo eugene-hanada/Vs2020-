@@ -28,4 +28,4 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
         
     - name: Build
-      run: msbuild cpptest/cpptest.sln
+      run: msbuild cpptest/cpptest/cpptest.vcxproj
