@@ -25,7 +25,7 @@ jobs:
     steps:
 
     - name: Add msbuild to PATH
-      run: set PATH = C:\Program Files\Microsoft Visual Studio\2022\Community\Msbuild\Current\Bin\MSBuild.exe
+      run: set PATH=%PATH%;C:\Program Files\Microsoft Visual Studio\2022\Community\Msbuild\Current\Bin\MSBuild.exe
         
     - name: Build
       run: msbuild cpptest/cpptest.sln
